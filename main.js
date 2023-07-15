@@ -14,7 +14,7 @@ listadoComponentes = [
         titulo: 'Teclado',
         precio: 2899,
         descripción: "Teclado Noga NKB-GK23",
-        img: './imagenes/teclado.jpg',
+        img: './imagenes/teclado.jpg,
         cantidad: 0,
 
     },

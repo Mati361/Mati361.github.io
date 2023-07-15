@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <script src="https://kit.fontawesome.com/458d067753.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./imagenes/icono.jpg" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<header class="cabecera">
+    <img class="logo" src="./imagenes/logo.jpg" alt="logo">
+    <button id="btnMenu" class="btnmenu">Menú</button>
+    <nav>
+        <button id="btncerrar" class="btnCerrar">X</button>
+        <ul id="menuDesplegable" class="menuCabecera">
+            <li class="menuItems"> <a href="#seccionPrincipal"><i class="fa-solid fa-house fa-sm"
+                        style="color: #85f7ff;"></i>Inicio</a></li></i>
+            <li class="menuItems"> <a href="#seccionCarrito"><i class="fa-solid fa-cart-shopping fa-sm"
+                        style="color: #85f7ff;"></i>Carrito </a></li>
+
+        </ul>
+
+    </nav>
+</header>
+
+<body>
+    <main>
+        <section id="seccionPrincipal">
+            <button id="precioAscendente">Menor precio</button>
+            <button id="precioDescendente">Mayor precio</button>
+            <button id="idAscendente">Id Menor</button>
+            <button id="idDescendente">Id Mayor </button>
+            <input type="text" name="" placeholder="Buscador" id="buscador">
+            <h1>Los mejores Productos</h1>
+            <ul id="listadoComponentes"></ul>
+            <section class="carrito">
+
+
+                <h2 class="center">Seccion Carrito</h2>
+                <div class="displayFlex">
+
+                    <button class="Vaciar" id="vaciarCarrito">Vaciar Carrito</button>
+                    <button id="finalizar" class="finalizarC ocultar">finalizar Compra</button>
+                </div>
+                <section id="mostrarCartel"></section>
+                <section id="seccionCarrito"></section>
+                <section class="center" id="totalCarrito"></section>
+
+            </section>
+        </section>
+        <section>
+
+
+
+
+
+            <form id="formulario" class="ocultar" name="formulario" action="https://formspree.io/f/xjvqvgvy"
+                method="POST">
+                <label>
+                    ingrese su email
+                    <input type="email" name="email">
+                </label>
+                <label>
+                    <textarea name="titulo" disabled ></textarea>
+                </label>
+                <label>
+
+                    <textarea name="cantidad" disabled  ></textarea>
+                </label>
+                <label>
+
+                    <textarea name="totalCarrito" disabled ></textarea>
+                </label>
+                <!-- your other form fields go here -->
+                <button type="submit">Enviar</button>
+            </form>
+
+
+
+        </section>
+    </main>
+    <script src="./main.js"></script>
+    <footer>
+
+        <ul class="footer">
+            <h3>Te recomendamos esta pagina para comprar: </h3>
+            <li><a href="https://www.gezatek.com.ar/" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-solid fa-globe fa-sm" style="color: #979797;"></i>Gezatek</a></li>
+            <li><a href="https://www.instagram.com/gezatek/" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-brands fa-instagram fa-sm" style="color: #ff8800;"></i>Instagram</a></li>
+            <li><a href="https://www.facebook.com/gezatek/" target="_blank" rel="noopener noreferrer"> <i
+                        class="fa-brands fa-facebook fa-sm" style="color: #0553f0;"></i>Facebook</a></li>
+
+        </ul>
+
+    </footer>
+</body>
+
+</html>

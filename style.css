@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Geologica', sans-serif;
+}
+
+.logo {
+  width: 15%;
+  border-radius: 25px;
+}
+
+header {
+  background-image: url(./imagenes/images.jpg);
+}
+
+.cabecera {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(0, 0, 0);
+}
+
+.menuCabecera {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menuItems {
+  padding: 50px;
+  text-decoration: none;
+}
+
+.menuItems:hover {
+  text-decoration: underline;
+}
+
+.menuItems a {
+  text-decoration: none;
+  color: white;
+  font-size-adjust: 18px;
+}
+
+.items {
+  height: 400px;
+  width: 300px;
+}
+
+#buscador {
+  border-radius: 2cm;
+  border-style: none;
+  padding: 2px;
+}
+
+ul.footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-image: url(./imagenes/images.jpg);
+}
+
+h1 {
+  text-align: center;
+  padding-top: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  color: white;
+}
+
+button {
+  color: white;
+  background-color: rgb(7, 64, 82);
+  border-radius: 10px;
+  padding: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding-top: 5px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  text-align: center;
+  color: rgb(43, 72, 99);
+  box-shadow: 6px 6px 6px 6px black;
+  border-radius: 10px;
+}
+
+img {
+  width: 60%;
+}
+
+#seccionPrincipal {
+  background-color: rgba(109, 197, 248, 0.712);
+}
+
+#listadoComponentes {
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+footer {
+  background-image: url(./imagenes/images.jpg);
+}
+
+.ocultar {
+  display: none;
+}
+
+#seccionCarrito {
+  background-color: rgba(150, 150, 150, 0.514);
+  max-height: 20%;
+  max-width: 100%;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#totalCarrito{
+  color: rgb(165, 165, 165);
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+
+}
+.contenedorImagen {
+  height: 200px;
+  width: 300px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: rgb(255, 0, 0);
+  background-color: rgb(39, 169, 209);
+}
+
+button:hover {
+  background-color: rgba(79, 166, 192, 0.582);
+}
+
+.pasoD {
+  width: 200px;
+}
+.btnCerrar{
+  display: none;
+}
+
+.btnmenu{
+  display:none;
+  position: fixed;
+  right: 0;
+}
+form{
+  color: aqua;
+  background-color: black;
+}
+.displayFlex{
+  display: flex;
+}
+
+
+@media only screen and (max-width: 768px ) {
+  .btnCerrar, .menuCabecera{
+    display: none;
+    position: fixed;
+    background-color: rgb(0, 162, 255);
+    top: 50px;
+    right: 0;
+  }
+  .btnCerrar{
+    top: 0;
+    background-color: rgb(0, 162, 255);
+    color: black;
+    
+  }
+  .btnmenu{
+    display:block;
+  }
+  .ocultar{
+    display: none;
+  }
+  .mostrar{
+    display: block;
+  }
+  .menuCabecera{
+    justify-content: end;
+    
+  }
+  .cabecera{
+    display: flex;
+    justify-content: space-between;
+  }
+ 
+  
+} 
+
